@@ -1,0 +1,17 @@
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Servicios\bin\Debug\net5.0\Servicios.deps.json
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Servicios\bin\Debug\net5.0\Servicios.dll
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Servicios\bin\Debug\net5.0\ref\Servicios.dll
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Servicios\bin\Debug\net5.0\Servicios.pdb
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Servicios\bin\Debug\net5.0\Acceso a datos.dll
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Servicios\bin\Debug\net5.0\Entidades.dll
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Servicios\bin\Debug\net5.0\Acceso a datos.pdb
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Servicios\bin\Debug\net5.0\Entidades.pdb
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Servicios\obj\Debug\net5.0\Servicios.csproj.AssemblyReference.cache
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Servicios\obj\Debug\net5.0\Servicios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Servicios\obj\Debug\net5.0\Servicios.AssemblyInfoInputs.cache
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Servicios\obj\Debug\net5.0\Servicios.AssemblyInfo.cs
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Servicios\obj\Debug\net5.0\Servicios.csproj.CoreCompileInputs.cache
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Servicios\obj\Debug\net5.0\Servicios.csproj.CopyComplete
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Servicios\obj\Debug\net5.0\Servicios.dll
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Servicios\obj\Debug\net5.0\ref\Servicios.dll
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Servicios\obj\Debug\net5.0\Servicios.pdb

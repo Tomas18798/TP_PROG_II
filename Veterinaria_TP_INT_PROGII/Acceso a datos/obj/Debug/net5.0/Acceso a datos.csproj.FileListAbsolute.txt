@@ -1,0 +1,15 @@
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Acceso a datos\bin\Debug\net5.0\Acceso a datos.deps.json
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Acceso a datos\bin\Debug\net5.0\Acceso a datos.dll
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Acceso a datos\bin\Debug\net5.0\ref\Acceso a datos.dll
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Acceso a datos\bin\Debug\net5.0\Acceso a datos.pdb
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Acceso a datos\bin\Debug\net5.0\Entidades.dll
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Acceso a datos\bin\Debug\net5.0\Entidades.pdb
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Acceso a datos\obj\Debug\net5.0\Acceso a datos.csproj.AssemblyReference.cache
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Acceso a datos\obj\Debug\net5.0\Acceso a datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Acceso a datos\obj\Debug\net5.0\Acceso a datos.AssemblyInfoInputs.cache
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Acceso a datos\obj\Debug\net5.0\Acceso a datos.AssemblyInfo.cs
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Acceso a datos\obj\Debug\net5.0\Acceso a datos.csproj.CoreCompileInputs.cache
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Acceso a datos\obj\Debug\net5.0\Acceso a datos.csproj.CopyComplete
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Acceso a datos\obj\Debug\net5.0\Acceso a datos.dll
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Acceso a datos\obj\Debug\net5.0\ref\Acceso a datos.dll
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Acceso a datos\obj\Debug\net5.0\Acceso a datos.pdb
