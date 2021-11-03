@@ -114,3 +114,148 @@ VALUES ('2021-10-25', 1, 980)
 -- DETALLE ATENCION
 INSERT INTO detalle_atencion
 VALUES (1, 4)
+
+
+create PROC [dbo].[SP_CargarDatos]
+@dni INT
+AS
+BEGIN
+SELECT *
+FROM clientes c 
+JOIN mascotas m ON c.id_cliente = m.duenio
+JOIN tipo_mascotas t ON m.tipo = t.id_tipo
+
+WHERE DNI = @dni
+END
+
+CREATE PROCEDURE [dbo].[SP_CONSULTAR_DETALLES]
+	@id_atencion int
+AS
+BEGIN
+	
+	--SELECT  da.nro_detalle,ts.servicio,s.descripcion,s.precio
+	Select *
+	from detalle_atencion da join atencion a on da.nro_atencion=a.id_atencion
+			join servicios s on s.id_servicio=da.servicio
+			join tipo_servicios ts on ts.id_tipo=s.tipo
+	where da.nro_atencion=@id_atencion
+END
+
+create PROCEDURE [dbo].[SP_CONSULTAR_VENDEDORES]
+AS
+BEGIN
+	
+	SELECT * from vendedor;
+END
+
+create PROCEDURE [dbo].[SP_INSERTAR_ATENCION] 
+	@mascota int, 
+	@total decimal,
+	@atencion_nro int OUTPUT
+AS
+BEGIN
+	INSERT INTO atencion(fecha, mascota, total)
+    VALUES (GETDATE(), @mascota, @total);
+    SET @atencion_nro = SCOPE_IDENTITY();
+
+END
+
+create PROCEDURE [dbo].[SP_INSERTAR_CLIENTE] 
+	@nombre varchar(25),
+	@DNI bigint,
+	@tel bigint
+AS
+BEGIN
+	INSERT INTO clientes(apellido,DNI,tel)
+    VALUES (@nombre,@DNI,@tel);
+  
+END
+
+create PROCEDURE [dbo].[SP_INSERTAR_DETALLE] 
+	@atencion_nro int,
+	@servicio int
+AS
+BEGIN
+	INSERT INTO detalle_atencion(nro_atencion,servicio)
+    VALUES (@atencion_nro,@servicio);
+  
+END
+
+create PROCEDURE [dbo].[SP_INSERTAR_MASCOTA] 
+	@nombre varchar(25),
+	@edad int,
+	@duenio int,
+	@tipo int
+AS
+BEGIN
+	INSERT INTO mascotas(nombre,edad,duenio,tipo)
+    VALUES (@nombre,@edad,@duenio,@tipo);
+  
+END
+
+create PROCEDURE [dbo].[SP_MOSTRAR_ATENCION] 
+	@nombre varchar(25),
+	@DNI bigint
+AS
+BEGIN
+	select distinct *
+	
+	from atencion a join mascotas m on a.mascota=m.id_mascota
+		join tipo_mascotas tm on m.tipo=tm.id_tipo
+		join clientes c on m.duenio=c.id_cliente
+		--join detalle_atencion da on a.id_atencion=da.nro_atencion
+		--join servicios s on da.servicio=s.id_servicio
+		--join tipo_servicios ts on s.tipo=ts.id_tipo
+	where c.apellido = @nombre and c.DNI = @DNI
+END
+
+create PROCEDURE [dbo].[SP_MOSTRAR_SERVICIOS]
+AS
+BEGIN
+	select s.descripcion,s.precio,ts.servicio
+from servicios s join tipo_servicios ts on s.tipo=ts.id_tipo
+	
+END
+
+create PROCEDURE [dbo].[SP_MOSTRAR_USUARIOS]
+AS
+BEGIN
+	
+	SELECT usuario, pass from vendedor;
+END
+
+create PROCEDURE [dbo].[SP_PROXIMA_ATENCION]
+@next int OUTPUT
+AS
+BEGIN
+	SET @next = (SELECT MAX(id_atencion)+1  FROM atencion);
+END	
+
+create PROCEDURE [dbo].[SP_PROXIMA_MASCOTA]
+@next int OUTPUT
+AS
+BEGIN
+	SET @next = (SELECT MAX(id_mascota)+1  FROM mascotas);
+END	
+
+create PROCEDURE [dbo].[SP_PROXIMO_CLIENTE]
+@next int OUTPUT
+AS
+BEGIN
+	SET @next = (SELECT MAX(id_cliente)+1  FROM clientes);
+END	
+
+create PROCEDURE [dbo].[SP_REGISTRAR_VENDEDOR] 
+	@nombre varchar(25),
+	@apellido varchar(25),
+	@telefono bigint,
+	@mail varchar(25),
+	@usuario varchar(25),
+	@pass varchar(25)
+
+AS
+BEGIN
+	INSERT INTO vendedor(nombre,apellido, tel, mail,usuario,pass)
+    VALUES (@nombre, @apellido, @telefono, @mail,@usuario,@pass);
+  
+END
