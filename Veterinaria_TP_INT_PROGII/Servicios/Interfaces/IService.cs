@@ -36,6 +36,9 @@ namespace Servicios.Interfaces
         public Mascota GetMascotaXID(Int64 DNI);
         public bool ExisteCliente(Int64 DNI);
 
+        bool GuardarServicio(Servicio oServicio); 
+        bool ActualizarServicio(int id_servicio, Servicio oServicio);
+        void Borrarservicio(int id_servicio);
         void BorrarDetalle(int id_det, int id_at);
     }
 }

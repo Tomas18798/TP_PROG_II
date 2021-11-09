@@ -370,13 +370,13 @@ namespace Forms
                     oAtencion._mascota = mascota;
                     if (servicio.GuardarAtencion(oAtencion))
                     {
-                        MessageBox.Show("Presupuesto guardado con éxito!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Guardado con éxito!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
                         
                     }
                     else
                     {
-                        MessageBox.Show("Error al intentar grabar el presupuesto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Error al intentar guardar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }

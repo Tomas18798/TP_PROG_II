@@ -111,5 +111,19 @@ namespace Servicios.Implementaciones
         {
              AtencionDAO.BorrarDetalle(id_det,id_at);
         }
+
+        public bool GuardarServicio(Servicio oServicio)
+        {
+            return AtencionDAO.GuardarServicio(oServicio);
+        }
+
+        public bool ActualizarServicio(int id_servicio, Servicio oServicio)
+        {
+            return AtencionDAO.ActualizarServicio(id_servicio,oServicio);
+        }
+        public void Borrarservicio(int id_servicio)
+        {
+            AtencionDAO.Borrarservicio(id_servicio);
+        }
     }
 }

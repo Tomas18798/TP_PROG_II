@@ -18,6 +18,7 @@ namespace Forms
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Inicio(false));
+           // Application.Run(new AgregarServicio());
         }
     }
 }

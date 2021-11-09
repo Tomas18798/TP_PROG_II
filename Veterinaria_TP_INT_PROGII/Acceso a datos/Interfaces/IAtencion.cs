@@ -34,5 +34,10 @@ namespace Acceso_a_datos.Interfaces
         List<Cliente> GetClientes();
         int GetProximoID(string SP);
         public bool ExisteCliente(Int64 DNI);
+
+        bool GuardarServicio(Servicio oServicio);
+        bool ActualizarServicio(int id_servicio, Servicio oServicio);
+        void Borrarservicio(int id_servicio);
+
     }
 }

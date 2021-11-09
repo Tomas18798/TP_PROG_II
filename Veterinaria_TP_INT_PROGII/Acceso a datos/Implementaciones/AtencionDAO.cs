@@ -189,7 +189,7 @@ namespace Acceso_a_datos.Implementaciones
             foreach (DataRow row in tabla.Rows)
             {
                 Servicio oServicio = new Servicio();
-                oServicio._id = Convert.ToInt32(row["id_servicioo"].ToString());
+                oServicio._id = Convert.ToInt32(row["id_servicio"].ToString());
 
                 TipoServicio oTipoServicio = new TipoServicio();
                 oTipoServicio._id = Convert.ToInt32(row["id_tipo"].ToString());
@@ -440,6 +440,74 @@ namespace Acceso_a_datos.Implementaciones
             comando.Parameters.AddWithValue("@id1", id_at);
             comando.ExecuteNonQuery();
             conexion.Close();
+        }
+        public void Borrarservicio(int id_servicio)
+        {
+            conexion.Open();
+            SqlCommand comando = new SqlCommand("SP_BORRAR_SERVICIO", conexion);
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@id_servicio", id_servicio);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+        }
+        public bool GuardarServicio(Servicio oServicio)
+        {
+            bool flag;
+            try
+            {
+                conexion.Open();
+                SqlCommand comando = new SqlCommand("SP_GUARDAR_SERVICIO", conexion);
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.AddWithValue("@tipo", oServicio._tipo._id);
+                comando.Parameters.AddWithValue("@descripcion", oServicio._descripcion);
+                comando.Parameters.AddWithValue("@precio", oServicio._precio);
+                comando.ExecuteNonQuery();
+
+                flag = true;
+            }
+            catch (Exception)
+            {
+                flag = false;
+                throw;
+
+
+            }
+            finally
+            {
+                if (conexion != null && conexion.State == ConnectionState.Open)
+                    conexion.Close();
+
+            }
+            return flag;
+        }
+
+        public bool ActualizarServicio(int id_servicio,Servicio oServicio)
+        {
+            bool flag;
+            try
+            {
+                conexion.Open();
+                SqlCommand comando = new SqlCommand("SP_EDITAR_SERVICIO", conexion);
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.AddWithValue("@id", id_servicio);
+                comando.Parameters.AddWithValue("@tipo", oServicio._tipo._id);
+                comando.Parameters.AddWithValue("@descripcion", oServicio._descripcion);
+                comando.Parameters.AddWithValue("@precio", oServicio._precio);
+                comando.ExecuteNonQuery();
+
+                flag = true;
+            }
+            catch (Exception)
+            {
+                flag = false;
+                throw;
+            }
+            finally
+            {
+                if (conexion != null && conexion.State == ConnectionState.Open)
+                    conexion.Close();
+            }
+            return flag;
         }
     }
 }

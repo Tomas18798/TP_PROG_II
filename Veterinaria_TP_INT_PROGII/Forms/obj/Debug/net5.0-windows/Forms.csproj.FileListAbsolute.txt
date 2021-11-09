@@ -34,3 +34,4 @@ C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Forms\obj\Debug\net5.0-windo
 C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Forms\obj\Debug\net5.0-windows\Forms.Registro.resources
 C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Forms\obj\Debug\net5.0-windows\Forms.VerAtenciones.resources
 C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Forms\obj\Debug\net5.0-windows\Forms.csproj.CopyComplete
+C:\Users\tom\source\repos\Veterinaria_TP_INT_PROGII\Forms\obj\Debug\net5.0-windows\Forms.AgregarServicio.resources

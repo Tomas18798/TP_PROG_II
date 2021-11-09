@@ -78,5 +78,11 @@ namespace Forms
                 " 113197 - Guiñazú, Gastón Ignacio \n" +
                 " 112952 - Gutierrez, Tomás Maximiliano ", "Alumnos que participaron del proyecto:", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void btnAgregarServicio_Click(object sender, EventArgs e)
+        {
+            AgregarServicio frm = new AgregarServicio();
+            frm.ShowDialog();
+        }
     }
 }

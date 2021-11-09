@@ -40,6 +40,7 @@ namespace Forms
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnAgregarServicio = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.grupoInicio.SuspendLayout();
             this.SuspendLayout();
@@ -78,6 +79,7 @@ namespace Forms
             // 
             // grupoInicio
             // 
+            this.grupoInicio.Controls.Add(this.btnAgregarServicio);
             this.grupoInicio.Controls.Add(this.btnAcercaDe);
             this.grupoInicio.Controls.Add(this.btnNuevaAtencion);
             this.grupoInicio.Controls.Add(this.btnVer);
@@ -99,7 +101,7 @@ namespace Forms
             // 
             // btnNuevaAtencion
             // 
-            this.btnNuevaAtencion.Location = new System.Drawing.Point(29, 74);
+            this.btnNuevaAtencion.Location = new System.Drawing.Point(29, 69);
             this.btnNuevaAtencion.Name = "btnNuevaAtencion";
             this.btnNuevaAtencion.Size = new System.Drawing.Size(204, 23);
             this.btnNuevaAtencion.TabIndex = 6;
@@ -147,6 +149,16 @@ namespace Forms
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // btnAgregarServicio
+            // 
+            this.btnAgregarServicio.Location = new System.Drawing.Point(29, 103);
+            this.btnAgregarServicio.Name = "btnAgregarServicio";
+            this.btnAgregarServicio.Size = new System.Drawing.Size(204, 23);
+            this.btnAgregarServicio.TabIndex = 8;
+            this.btnAgregarServicio.Text = "Agregar Servicio";
+            this.btnAgregarServicio.UseVisualStyleBackColor = true;
+            this.btnAgregarServicio.Click += new System.EventHandler(this.btnAgregarServicio_Click);
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -179,5 +191,6 @@ namespace Forms
         private System.Windows.Forms.Button btnNuevaAtencion;
         private System.Windows.Forms.Button btnVer;
         private System.Windows.Forms.Button btnIngresar;
+        private System.Windows.Forms.Button btnAgregarServicio;
     }
 }
